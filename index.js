@@ -2,21 +2,28 @@ const express = require('express')
     , bodyParser = require('body-parser')
     , massive = require('massive')
     , cors = require('cors')
-    , http = require('http')
     , session = require('express-session')
     , config = require('./backend/config');
 
+var connString = 'postgres://postgres:@localhost/Union_Bindings';
 // const app = module.exports = express();
-const app = module.exports = express();
-const connString = 'postgres://postgres:@localhost/Union_Bindings';
-const massiveInstance = massive.connectSync({connectionString: connString});
-
-app.set('db', massiveInstance);
-const db = app.get('db');
-// const massiveInstance = massive.connectSync({connectionString: config.database_secret});
+var app = module.exports = express();
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/dist'));
+app.use(cors());
+
+var db = massive.connect({connectionString : connString},
+  function(err, localdb) {
+    db = localdb;
+    app.set('db', db);
+  }
+)
+// app.set('db', massiveInstance);
+// var db = app.get('db');
+// const massiveInstance = massive.connectSync({connectionString: config.database_secret});
+
+
 
 
 
