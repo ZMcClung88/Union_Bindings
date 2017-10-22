@@ -10,7 +10,8 @@ angular.module('app', ['ui.router']).config(function($stateProvider, $urlRouterP
     })
     .state('products', {
       url: '/products',
-      templateUrl: '/views/products.html'
+      templateUrl: '/views/products.html',
+      controller: 'productsCtrl'
     })
     .state('singleProduct', {
       url: '/products/:id',
