@@ -26,6 +26,6 @@
 angular.module('app').directive('socialDirective', function() {
   return {
     restrict: 'E',
-    templateUrl: '../frontend/views/directives/socialDirective.html'
+    templateUrl: '../views/directives/socialDirective.html'
   }
 });

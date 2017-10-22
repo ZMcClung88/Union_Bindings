@@ -17,7 +17,7 @@ var paths = {
     jsSource: ['./frontend/js/**/*.js'],
     sassSource: ['./frontend/styles/*.scss'],
     indexSource: ['./frontend/index.html'],
-    viewsSource: ['./frontend/views/*.html'],
+    viewsSource: ['./frontend/views/**/*.html'],
     picturesSource: ['./frontend/media/**/**/*']
 };
 

@@ -1,4 +1,5 @@
 node_modules
-dist
 font-awesome-4.7.0
 font-awesome-4.7.0.zip
+dist
+config.js
