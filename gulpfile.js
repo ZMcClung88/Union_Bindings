@@ -16,7 +16,7 @@ var cachebust = new CacheBuster();
 var paths = {
     jsSource: ['./frontend/js/**/*.js'],
     sassSource: ['./frontend/styles/*.scss'],
-    indexSource: ['./frontend/index.html'],
+    indexSource: ['./index.html'],
     viewsSource: ['./frontend/views/**/*.html'],
     picturesSource: ['./frontend/media/**/**/*']
 };
