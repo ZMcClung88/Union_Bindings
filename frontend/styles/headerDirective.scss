@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600');
+
 .header_wrapper {
   display: flex;
-  height: 94px;
-  // border: 2px solid red;
+  height: 50px;
   color: white;
   background-color: #1a1818;
-  font-family: "Gotham A","Gotham B";
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
 
   .link_list {
@@ -22,6 +23,58 @@
         display: flex;
         justify-content: center;
       }
+    }
+  }
+}
+
+//////////// Media Queries ////////////////
+@media (max-width: 400px) {
+  #desktop {
+    display: none;
+  }
+
+  #header_wrapper {
+    font-size: 16px;
+    color: black;
+    // border: 1px solid red;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #mobile {
+      display: flex;
+      flex-direction: row;
+      // justify-content: space-around;
+      // border: 1px solid yellow;
+      width: 100%;
+      height: 50px;
+    }
+
+    #logo {
+      // border: 1px solid blue;
+      height: 18px;
+      width: 37px;
+    }
+
+    #title {
+      // border: 1px solid green;
+      width: 75%;
+      margin-top: 3px;
+      font-weight: bolder;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      // padding-right: 20px;
+
+    }
+    #ham {
+      // border: 1px solid blue;
+      font-size: 20px;
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
