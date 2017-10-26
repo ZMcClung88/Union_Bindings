@@ -14,12 +14,12 @@
 }
 
 //////////// Media Queries ////////////////
-@media(max-width: 400px) {
+@media(max-width: 420px) {
   #top {
     border-bottom: 1px solid white;;
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 5px;
     padding-bottom: 40px;
     #newsletter {
       display: flex;
@@ -30,6 +30,8 @@
     }
     #newsletter_input {
       width: 75%;
+      padding-left: 10px;
+      padding-right: 10px;
       border: 1px solid white;
       input {
         width: 75%;
