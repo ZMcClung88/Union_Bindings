@@ -2,6 +2,8 @@
   #desktop {
     display: none;
   }
+
+////// HEADER //////
   #mobile {
     // border: 1px solid red;
     background-color: #eaeaea;
@@ -12,11 +14,12 @@
     font-weight: bolder;
     display: flex;
     flex-direction: row;
+    padding-left: 10px;
 
     #title {
       display: flex;
       align-items: center;
-      width: 80%;
+      width: 85%;
       // border: 1px solid green;
 
       #logo {
@@ -26,11 +29,66 @@
     }
 
     #ham {
-      width: 20%;
-      border: 1px solid blue;
+      width: 15%;
+      // border: 1px solid blue;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+  }
+
+  ////// FOOTER //////
+  #top {
+    // border: 1px solid red;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    #newsletter {
+      height: 25px;
+      // border: 1px solid pink;
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #newsletter_input {
+      width: 75%;
+      height: 25px;
+      // border: 1px solid green;
+      display: flex;
+
+      input {
+        height: 21px;
+        background-color: #1a1818;
+        // border: 1px solid white;
+        width: 65%;
+        padding-left: 20px;
+      }
+
+      button {
+        color: white;
+        height: 24px;
+        font-size: 18px;
+        text-align: center;
+        padding: 0px;
+      }
+    }
+  }
+
+  #bottom {
+
+    // border: 1px solid yellow;
+    color: grey;
+
+    #logo {
+      height: 30px;
+      width: 30px;
+      border-radius: 5px;
+      margin-top: 10px;
     }
   }
 }
