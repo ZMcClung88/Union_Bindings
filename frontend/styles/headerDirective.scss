@@ -28,13 +28,20 @@
 }
 
 //////////// Media Queries ////////////////
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   #desktop {
     display: none;
   }
 
+
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  #desktop {
+    display: none;
+  }
   #header_wrapper {
-    font-size: 16px;
+    font-size: 22px;
     color: black;
     // border: 1px solid red;
     background-color: #eaeaea;
@@ -46,26 +53,26 @@
       display: flex;
       flex-direction: row;
       // justify-content: space-around;
-      // border: 1px solid yellow;
+      border: 1px solid yellow;
       width: 100%;
       height: 50px;
     }
 
     #logo {
       // border: 1px solid blue;
-      height: 18px;
-      width: 37px;
+      height: 20px;
+      width: 40px;
     }
 
     #title {
       // border: 1px solid green;
       width: 75%;
-      margin-top: 3px;
+      margin-top: 7px;
       font-weight: bolder;
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      // padding-right: 20px;
+      padding-right: 100px;
 
     }
     #ham {
@@ -78,3 +85,21 @@
     }
   }
 }
+
+// @media screen and (min-width: 421px) and (max-width: 1000px) {
+//   #mobile {
+//     display: none;
+//   }
+//   #desktop {
+//     height: 50px;
+//     border: 1px solid white;
+//     width: 100%;
+//     display: flex;
+//
+//     #link-list {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//     }
+//   }
+// }
